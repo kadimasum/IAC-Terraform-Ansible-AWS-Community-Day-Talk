@@ -33,3 +33,29 @@ sudo apt update && sudo apt install terraform
 ```bash
 terraform -v
 ```
+
+## Prerequisites (Ansible)
+
+1. **Control Node**: A machine (your local machine or a CI runner) with Ansible installed.  
+   - Supported OS: Linux/macOS (Ansible is not natively supported on Windows as a control node).
+2. **Managed Nodes**: Remote machines (e.g., EC2 instances) that Ansible will configure.
+   - Requires **Python 3** installed (Amazon Linux, Ubuntu, etc., usually have it preinstalled).
+3. **SSH Access**: You must have SSH access from the control node to the managed nodes.
+   - Typically done via an SSH key (`.pem` or `.ssh/id_rsa`).
+4. **Inventory File**: A list of managed nodes Ansible will operate on.
+
+
+## Installing Ansible
+
+### On Ubuntu/Debian:
+
+```bash
+sudo apt update
+sudo apt install -y software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install -y ansible
+```
+### Verify Installation
+```bash
+ansible --version
+```
