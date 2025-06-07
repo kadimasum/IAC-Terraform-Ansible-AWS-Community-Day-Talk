@@ -10,4 +10,26 @@ This technical demo showcases how to provision and configure infrastructure on A
 
 **Ansible** is an open-source automation tool used for configuration management, application deployment, and orchestration. It uses simple YAML-based playbooks to define tasks and manage system configurations.
 
+## Prerequisites (Terraform)
 
+- An [AWS account](https://aws.amazon.com/)
+- AWS CLI installed and configured with an IAM user that has EC2, VPC, IAM, and S3 permissions
+- Admin access to your system to install Terraform
+- Basic knowledge of the command line
+
+---
+
+## 1. Install Terraform
+
+### On Linux / Ubuntu:
+
+```bash
+sudo apt update && sudo apt install -y gnupg software-properties-common curl
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/hashicorp.gpg
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt update && sudo apt install terraform
+```
+### Verify Installation
+```bash
+terraform -v
+```
