@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AWS Community Day Talk - Terraform & Ansible</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f6fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #232f3e;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #e3e3e3;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    .highlight {
+      background-color: #fffbdd;
+      border-left: 4px solid #f0c000;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Provision And Configure Infrastructure On AWS</h1>
+    <p>Using Terraform & Ansible – AWS Community Day 2025</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Session Overview</h2>
+      <p>
+        This hands-on demo explores how to provision cloud infrastructure on <strong>AWS</strong> using <strong>Terraform</strong>, and configure it using <strong>Ansible</strong>. Learn how these tools work together to create reproducible, scalable, and secure environments in the cloud.
+      </p>
+    </section>
+
+    <section>
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>Introduction to AWS cloud services and EC2 provisioning</li>
+        <li>How Terraform automates infrastructure as code (IaC)</li>
+        <li>Using Ansible to automate server configuration and deployment</li>
+        <li>Integrating Terraform and Ansible for seamless cloud automation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>About AWS</h2>
+      <p>
+        <strong>Amazon Web Services (AWS)</strong> is the world’s most comprehensive and broadly adopted cloud platform, offering over 200 fully featured services from data centers globally. It enables businesses and developers to scale and innovate faster, with pay-as-you-go pricing.
+      </p>
+    </section>
+
+    <section>
+      <h2>Tool Definitions</h2>
+      <ul>
+        <li><strong>Terraform:</strong> An open-source IaC tool by HashiCorp for declaratively provisioning and managing infrastructure.</li>
+        <li><strong>Ansible:</strong> An open-source configuration management tool that automates software provisioning and application deployment over SSH.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Integration Workflow</h2>
+      <p>
+        Terraform is used to define and create infrastructure such as EC2 instances, security groups, and networking components. Once the infrastructure is up, Ansible connects via SSH to configure the operating system, install packages, and deploy applications.
+      </p>
+
+      <div class="highlight">
+        Example: Terraform provisions an EC2 instance → Ansible installs Apache → Your web app is deployed automatically.
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2025 AWS Community Day | Presented by Kadima Samuel
+    </footer>
+  </main>
+
+</body>
+</html>
