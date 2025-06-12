@@ -45,7 +45,7 @@ terraform -v
 4. **Inventory File**: A list of managed nodes Ansible will operate on.
 
 
-## Installing Ansible
+## 2. Install Ansible
 
 ### On Ubuntu/Debian:
 
